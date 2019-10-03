@@ -30,9 +30,46 @@
         </div>
     </header>
 
-    <main></main>
+
+    <main class="formDelivery-main">
+        <div class="page-color">
+            <div class="formDelivery-container">
+                <h2 id="formDelivery-title">Enter your personal information</h2>
+                <form id="formDelivery-content">
+
+                    <label for="firstname"> First name </label>
+                    <input type="text" id="firstname" name="firstname" placeholder="first name" required />
+
+                    <label for="lastname"> Last name </label>
+                    <input type="text" id="lastname" name="lastname" placeholder="last name" required />
+
+                    <label for="address"> Address </label>
+                    <input type="text" id="address" name="address" placeholder="Address" required />
+
+                    <label for="zipcode"> Zip code. </label>
+                    <input type="number" id="zipcode" name="zipcode" placeholder="Zip code." maxlength="4" required />
+
+                    <label for="town"> Town </label>
+                    <input type="text" id="town" name="town" placeholder="town" required />
+
+                    <label for="email"> Email </label>
+                    <input type="email" id="email" name="email" placeholder="Email"
+                        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+                        required />
+
+                    <label for="phone"> Phone </label>
+                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" class="phone"
+                        placeholder="Telephone number." />
 
 
+                    <button type="submit" name="submit" id="onToThePayment-btn">on to the payment -></button>
+
+                    <button type="submit" name="return" id="return">Return</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
 
     <!--Link to JS-->
     <script src="js/script.js"></script>
