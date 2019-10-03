@@ -1,0 +1,199 @@
+:root {
+    --first-color: white;
+    --second-color: rgb(241, 240, 240);
+    --purple: #5c1182;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.section1 {
+    background-color: var(--first-color);
+    padding: 1em;
+    padding-top: 1em;
+    margin-bottom: 5em;
+    line-height: 1.5;
+}
+
+.section1 .title {
+    font-size: 1.4em;
+}
+
+.section1 p.see-more,
+.section1 p.price {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.section1 .more-info {
+    display: none;
+}
+
+.section1 .video {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.section2 {
+    background-color: var(--second-color);
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.section2 h2 {
+    font-size: 1.2em;
+    padding: 0.20em;
+}
+
+.section2 article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    background-color: var(--first-color);
+}
+
+.section2 article img {
+    width: 100%;
+}
+
+.section2 article .basic-info {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+.section2 article .basic-info .product-name {
+    font-size: 0.9em;
+}
+
+.section2 article .basic-info .price-details .price {
+    color: red;
+    font-weight: bold;
+}
+
+.section2 article .basic-info .price-details .porto {
+    font-size: 0.6em;
+}
+
+.section2 article .other-details {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.section2 article .other-details button.see-details {
+    flex-basis: 45%;
+    margin-left: auto;
+}
+
+.section2 article .other-details .sale {
+    color: red;
+    font-weight: bold;
+}
+
+.section2 a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 0.9em;
+    padding: 1em;
+}
+
+.section2 a:hover {
+    text-decoration: none;
+}
+
+.section2 a:active {
+    text-decoration: none;
+}
+
+.section2 a:visited {
+    text-decoration: none;
+}
+
+.section3 {
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding-bottom: 3em;
+}
+
+.section3 .subhead {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.section3 img {
+    width: 100%;
+}
+
+.section4 {
+    background-color: var(--second-color);
+    padding: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    padding-bottom: 1.5em;
+}
+
+.section5 img {
+    width: 100%;
+}
+
+.section5 .rating {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.section5 .testimonials-slider {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.purple-btn {
+    border: none;
+    background-color: var(--purple);
+    color: white;
+    font-size: 0.65em;
+    padding: 0.5em;
+    border-radius: 2px;
+    height: 35px;
+    font-weight: bold;
+}
+
+@media all and (min-width:750px) {
+    .section1 {
+        display: flex;
+    }
+
+    .section2 .all-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section2 .all-cards article {
+        flex-basis: 40%;
+        margin-left: 2em;
+    }
+
+    .section3 img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section5 .client-ratings {
+        display: flex;
+    }
+}
