@@ -97,13 +97,15 @@ input[type="number"] {
     cursor: pointer;
     border-radius: 2px;
     margin-top: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .onToThePayment-btn a {
     color: #fff;
     font-weight: 700;
     font-size: 17px;
-
 }
 
 .return {
