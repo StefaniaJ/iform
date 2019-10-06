@@ -17,7 +17,7 @@ html {
     background-color: #e9e8e8;
 }
 
-.formDelivery-container {
+.form-container {
     background-color: white;
     max-width: 570px;
     margin: auto;
@@ -87,7 +87,7 @@ input[type="number"] {
     display: inline-block;
 }
 
-#onToThePayment-btn {
+.onToThePayment-btn {
     background-color: #5c1182;
     display: block;
     width: 50%;
@@ -96,14 +96,13 @@ input[type="number"] {
     color: #fff;
     border: 1px solid transparent;
     cursor: pointer;
-    vertical-align: middle;
     font-weight: 700;
     border-radius: 2px;
     margin-top: 20px;
     font-size: 17px;
 }
 
-#return {
+.return {
     color: #888b8d;
     background-color: transparent;
     border: none;
@@ -112,7 +111,7 @@ input[type="number"] {
     border-bottom: 1px #888b8d solid;
 }
 
-#formDelivery-footer-title {
+#form-footer-title {
     font-size: 0.9rem;
     line-height: 1.6;
     font-weight: 700;
@@ -120,7 +119,7 @@ input[type="number"] {
     margin-top: 50px;
 }
 
-#formDelivery-footer-p {
+#form-footer-p {
     font-size: .8rem;
     line-height: 1.7;
     margin: 0 0 2rem;
@@ -128,7 +127,7 @@ input[type="number"] {
     padding: 10px;
 }
 
-#formDelivery-footer-subtitle {
+#form-footer-subtitle {
     font-size: 0.9rem;
     line-height: 1.6;
     font-weight: 700;
