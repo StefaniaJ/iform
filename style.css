@@ -100,7 +100,8 @@ input[type="number"] {
 .onToThePayment-btn {
   background-color: #5c1182;
   display: block;
-  width: 50%;
+  /* width: 50%; */
+  width: 67%;
   padding: 1rem 2rem;
   margin: 0 auto;
   border: 1px solid transparent;
@@ -110,6 +111,7 @@ input[type="number"] {
   color: #fff;
   font-weight: 700;
   font-size: 17px;
+  padding-left: 4px;
 }
 
 .onToThePayment-btn a {
@@ -122,7 +124,7 @@ input[type="number"] {
   color: #888b8d;
   background-color: transparent;
   border: none;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 20px;
   border-bottom: 1px #888b8d solid;
 }
@@ -150,21 +152,6 @@ input[type="number"] {
   color: #161616;
   margin-bottom: 10px;
 }
-#onToThePayment-btn {
-  background-color: #5c1182;
-  display: block;
-  width: 67%;
-  padding: 1rem 2rem;
-  margin: 0 auto;
-  color: #fff;
-  border: 1px solid transparent;
-  cursor: pointer;
-  font-weight: 700;
-  border-radius: 2px;
-  margin-top: 20px;
-  font-size: 17px;
-  padding-left: 4px;
-}
 
 .fa-lg {
   font-size: 1em;
@@ -172,15 +159,6 @@ input[type="number"] {
   margin-top: 3.5px;
   position: absolute;
   transform: rotate(90deg);
-}
-
-#return {
-  color: #888b8d;
-  background-color: transparent;
-  border: none;
-  font-size: 14px;
-  margin-top: 25px;
-  border-bottom: 1px #888b8d solid;
 }
 
 #formDelivery-footer-title {
