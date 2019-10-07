@@ -206,7 +206,7 @@ input[type="number"] {
 .sect p,
 .sect ul {
   font-size: 0.75rem;
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 1rem;
 }
 
@@ -221,11 +221,41 @@ input[type="number"] {
   display: inline-block;
 }
 
-#sect2-info #time {
-  margin-left: 30px;
+#info {
+  width: 144px;
+}
+#time {
+  width: 144px;
 }
 
 /* ////////  Media  ///////*/
+
+@media (min-width: 437px) {
+  #index-footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sect {
+    margin: 0 auto;
+    width: 160px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  #info {
+    width: auto;
+  }
+  #time {
+    width: auto;
+  }
+  #paymentmMthod {
+    width: 181px;
+  }
+}
+
 @media (min-width: 441px) {
   .logo {
     width: 215px;
@@ -250,6 +280,11 @@ input[type="number"] {
   }
 }
 
+@media (min-width: 530px) {
+  .sect {
+    width: 200px;
+  }
+}
 @media (min-width: 600px) {
   .logo {
     width: 215px;
@@ -292,8 +327,44 @@ input[type="number"] {
   }
 }
 
+@media (min-width: 650px) {
+  .sect {
+    width: 260px;
+  }
+}
+
 @media (min-width: 750px) {
   #onToThePayment-btn {
     width: 47%;
+  }
+  .sect {
+    width: 310px;
+  }
+}
+
+@media (min-width: 850px) {
+  .sect {
+    width: 360px;
+  }
+}
+@media (min-width: 920px) {
+  .sect {
+    width: 410px;
+  }
+}
+
+@media (min-width: 992px) {
+  #index-footer {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .sect {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .sect {
+    width: 250px;
   }
 }
