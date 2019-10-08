@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Title of page-->
-    <title> Form page 1- Basket</title>
+    <title>Kurv</title>
 </head>
 
 
@@ -28,24 +28,76 @@
 
             <!---- Steps---->
             <div class="steps">
-                <h3 class="stp active">1.Basket</h3>
-                <h3 class="stp">2.Delivery</h3>
-                <h3 class="stp">3.Payment method</h3>
+                <h3 class="stp active">1.Kurv</h3>
+                <h3 class="stp">2.Levering</h3>
+                <h3 class="stp">3.Betalingsmetode</h3>
             </div>
         </header>
 
 
         <main>
             <form id="formDelivery-content">
+                
+                <h4 class="KurvHeadings">Vælg flere numre og spar mere!</h4>
+                <h4 id="selectheader1"> Dit Valg:</h4>
+                <div id="item1" class="subscriptionselect active2">
+                    <p> <strong> 4 nr </strong> for 149 kr.</p>
+                    <p class="rabat">Spar 761 kr.</p>
+                </div>
+                <h4 id="selectheader2" class="purple">Mest Populære</h4>
+                <div id="item2" class="subscriptionselect" >
+                    <p> <strong> 6 nr</strong> for 199 kr.</p>
+                    <p class="rabat">Spar 866 kr.</p>
+                </div>
+                <h4 id="selectheader3"></h4>
+                <div id="item3" class="subscriptionselect">
+                    <p> <strong> 8 nr </strong> for 299 kr.</p>
+                    <p class="rabat">Spar 921 kr.</p>
+                </div>
+                <h4 class="KurvHeadings">ActiveFit fiberjakke</h4>
+                <div class="imgwrap">
+                    <img src="images/jacket.png" alt="ActiveFit Jacket" id="actfitJ">
+                </div>
+                <div class="size">
+                    <td required>
+                S <input type="radio" name="size" id="sizeS"> 
+                M <input type="radio" name="size" id="sizeM"> 
+                L<input type="radio" name="size" id="sizeL"> 
+                XL<input type="radio" name="size" id="sizeXL">
+            </td>
+            </div>
+                <h4 class="KurvHeadings">Din Kurv</h4>
 
-                <!-- ADD  CONTENT HERE -->
-
+                <section class="pricing">
+                    <tbody>
+                        <tr>
+                            <div class="oneGroup">
+                            <td>
+                                <p class="left">
+                                Din rabat:</p>
+                            </td>
+                            <td> <p class="right rabat" id="moneychange"> 761 kr.</p></td> <br>
+                        </div>
+                        </tr>
+                        <tr >
+                            <td><p class="left">Introduktionspris:</p></td>
+                            <td><p class="right" id="startPrice">149 kr.</p></td> <br>
+                        </tr>
+                        <tr>
+                            <td><p class="left">Porto og eksp:</p></td>
+                            <td><p class="right">49,50 kr</p></td> <br>
+                        </tr>
+                    </tbody>
+                    <p class="total">Totalpris inkl. levering</p>
+                    <p class="total" id="totalPrice">198,50 kr</p> <br>
+                </section>
+                
 
                 <button type="submit" name="submit" id="onToThePayment-btn" class="onToThePayment-btn"><a
-                        href="form.html"> On to the payment <i class="fa fa-arrow-up fa-lg"
+                        href="form.html"> Videre til levering <i class="fa fa-arrow-up fa-lg"
                             aria-hidden="true"></i></button></a>
 
-                <button type="submit" name="return" id="return" class="return">Return</button>
+                <button type="submit" name="return" id="return" class="return">Gå tilbage</button>
 
             </form>
         </main>
@@ -59,7 +111,7 @@
                 get to know
                 how food affects your body and your mood and how you can increase your wellbeing by eating
                 right.</p>
-            <h2 id="form-footer-subtitle"> Secure payment with</h2>
+            <h2 id="form-footer-subtitle"> Sikker betaling med</h2>
 
             <img class="payment"
                 src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/icon-payment-options-da.png"
@@ -69,6 +121,7 @@
     </div>
     <!--Link to JS-->
     <script src="script.js"></script>
+    <script src="basket.js"></script>
 </body>
 
 </html>
