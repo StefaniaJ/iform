@@ -37,31 +37,39 @@
 
         <main>
             <h2 id="formDelivery-title">Enter your personal information</h2>
-            <form id="formDelivery-content">
+            <form id="formDelivery-content" class="float-label" spellcheck="false">
+                <div class="control">
+                    <input type="text" id="firstname" name="firstname" placeholder="first name" required />
+                    <label for="firstname">first name</label>
+                </div>
 
-                <label for="firstname"></label>
-                <input type="text" id="firstname" name="firstname" placeholder="first name" required />
-
-                <label for="lastname"> </label>
-                <input type="text" id="lastname" name="lastname" placeholder="last name" required />
-
-                <label for="address"> </label>
-                <input type="text" id="address" name="address" placeholder="Address" required />
-
-                <label for="zipcode"> </label>
-                <input type="number" id="zipcode" name="zipcode" placeholder="Zip code." maxlength="4" required />
-
-                <label for="town"> </label>
-                <input type="text" id="town" name="town" placeholder="Town" required />
-
-                <label for="email"> </label>
-                <input type="email" id="email" name="email" placeholder="Email"
-                    pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
-                    required />
-
-                <label for="phone"> </label>
-                <input type="tel" pattern="[0-9]*" id="phone" name="phone" class="phone"
-                    placeholder="Telephone number." />
+                <div class="control">
+                    <input type="text" id="lastname" name="lastname" placeholder="last name" required />
+                    <label for="lastname"> last name</label>
+                </div>
+                <div class="control">
+                    <input type="text" id="address" name="address" placeholder="Address" required />
+                    <label for="address">Address </label>
+                </div>
+                <div class="control small">
+                    <input type="number" id="zipcode" name="zipcode" placeholder="Zip code." maxlength="4" required />
+                    <label for="zipcode"> Zip code.</label>
+                </div>
+                <div class="control medium">
+                    <input type="text" id="town" name="town" placeholder="Town" required />
+                    <label for="town">Town </label>
+                </div>
+                <div class="control">
+                    <input type="email" id="email" name="email" placeholder="Email"
+                        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+                        required />
+                    <label for="email">Email </label>
+                </div>
+                <div class="control">
+                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" placeholder="Telephone number."
+                        required />
+                    <label for="phone"> Telephone number.</label>
+                </div>
 
 
                 <button type="submit" name="submit" id="onToThePayment-btn" class="onToThePayment-btn">On to the payment
@@ -91,7 +99,7 @@
 
     </div>
     <!--Link to JS-->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

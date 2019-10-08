@@ -5,9 +5,15 @@
   padding: 0;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body,
 html {
-  font-family: bonnier-magazine-shop, Helvetica, Arial;
+  font-family: Helvetica, Arial;
   height: 100%;
 }
 
@@ -71,7 +77,7 @@ html {
   font-weight: 700;
   font-size: 1rem;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 input {
@@ -87,14 +93,16 @@ input {
 }
 
 input[type="number"] {
-  width: 28%;
-  display: inline-block;
-  margin-right: 5px;
+  /* width: 28%; */
+  /* display: inline-block; */
+  /* margin-right: 5px; */
+  margin-right: -6px;
 }
 
 #town {
-  width: 59%;
-  display: inline-block;
+  /* width: 59%;
+  display: inline-block; */
+  margin-left: 7px;
 }
 
 .onToThePayment-btn {
@@ -368,4 +376,58 @@ input[type="number"] {
   .sect {
     width: 250px;
   }
+}
+
+.float-label .control {
+  /* float: left; */
+  position: relative;
+  width: 100%;
+  /* border-bottom: 1px solid #ddd;
+  padding-top: 23px;
+  padding-bottom: 10px; */
+}
+
+.float-label .control.small {
+  width: 33%;
+  /* border-right: 1px solid #ddd; */
+  display: inline-block;
+}
+.float-label .control.medium {
+  width: 65%;
+  /* padding-left: 10px; */
+  display: inline-block;
+}
+
+.float-label input,
+.float-label {
+  outline: 0;
+  resize: none;
+}
+
+.float-label input + label,
+.float-label + label {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  transition: top 0.7s ease, opacity 0.7s ease;
+  opacity: 0;
+  font-size: 13px;
+  font-weight: 600;
+  /* color: #ccc; */
+}
+
+.float-label input:valid + label,
+.float-label:valid + label {
+  opacity: 1;
+  top: -8px;
+  background-color: white;
+  left: 40px;
+}
+.float-label input:focus + label,
+.float-label:focus + label {
+  color: black;
+  opacity: 1;
+  top: -8px;
+  background-color: white;
+  left: 40px;
 }
