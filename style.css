@@ -233,6 +233,61 @@ input[type="number"] {
   width: 144px;
 }
 
+/* Form page 1- Kurv */
+p.left {
+  text-align: left;
+  margin-left: 5em;
+}
+p.right {
+  text-align: right;
+  margin-right: 5em;
+}
+
+.oneGroup {
+  display: inline;
+}
+#totalPrice {
+  color: #f36;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.rabat {
+  color: #f36;
+}
+
+.purple {
+  color: var(--purple);
+}
+.KurvHeadings {
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.subscriptionselect {
+  padding: 1em;
+  border-radius: 4%;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0.5em;
+  background-color: white;
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: #888b8d;
+  cursor: pointer;
+}
+
+.active2 {
+  border-color: var(--purple);
+}
+
+#actfitJ {
+  width: 20%;
+}
 /* ////////  Media  ///////*/
 
 @media (min-width: 437px) {
