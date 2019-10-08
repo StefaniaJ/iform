@@ -89,20 +89,76 @@ input {
   margin-bottom: 15px;
   border: 1px solid #e4e3e3;
   border-radius: 2px;
-  color: #e4e3e3;
 }
 
 input[type="number"] {
-  /* width: 28%; */
-  /* display: inline-block; */
-  /* margin-right: 5px; */
   margin-right: -6px;
 }
 
 #town {
-  /* width: 59%;
-  display: inline-block; */
   margin-left: 7px;
+}
+
+.form-group {
+  position: relative;
+  font-size: 15px;
+}
+
+.form-group.small {
+  width: 33%;
+  display: inline-block;
+}
+.form-group.medium {
+  width: 65%;
+  display: inline-block;
+}
+
+.form-control {
+  transition: 0.3s;
+  color: #161616;
+}
+.form-control:invalid {
+  outline: none;
+}
+.form-control:focus,
+.form-control:valid {
+  outline: none;
+}
+.form-control:focus + .form-label,
+.form-control:valid + .form-label {
+  font-size: 12px;
+  color: #5c1182;
+  opacity: 1;
+  top: -7px;
+  left: 180px;
+  transition: top 0.4s ease, opacity 0.4s ease;
+  background-color: white;
+  z-index: 10;
+}
+
+.form-control-zip:focus + .form-label,
+.form-control-zip:valid + .form-label {
+  left: 62px;
+}
+.form-control-town:focus + .form-label,
+.form-control-town:valid + .form-label {
+  left: 119px;
+}
+
+.form-label {
+  position: absolute;
+  z-index: 1;
+  top: 19px;
+  transition: 0.3s;
+  margin-left: -147px;
+}
+
+.form-label-zip {
+  margin-left: -28px;
+}
+
+.form-label-town {
+  margin-left: -95px;
 }
 
 .onToThePayment-btn {
@@ -376,58 +432,4 @@ input[type="number"] {
   .sect {
     width: 250px;
   }
-}
-
-.float-label .control {
-  /* float: left; */
-  position: relative;
-  width: 100%;
-  /* border-bottom: 1px solid #ddd;
-  padding-top: 23px;
-  padding-bottom: 10px; */
-}
-
-.float-label .control.small {
-  width: 33%;
-  /* border-right: 1px solid #ddd; */
-  display: inline-block;
-}
-.float-label .control.medium {
-  width: 65%;
-  /* padding-left: 10px; */
-  display: inline-block;
-}
-
-.float-label input,
-.float-label {
-  outline: 0;
-  resize: none;
-}
-
-.float-label input + label,
-.float-label + label {
-  position: absolute;
-  top: 10px;
-  left: 40px;
-  transition: top 0.7s ease, opacity 0.7s ease;
-  opacity: 0;
-  font-size: 13px;
-  font-weight: 600;
-  /* color: #ccc; */
-}
-
-.float-label input:valid + label,
-.float-label:valid + label {
-  opacity: 1;
-  top: -8px;
-  background-color: white;
-  left: 40px;
-}
-.float-label input:focus + label,
-.float-label:focus + label {
-  color: black;
-  opacity: 1;
-  top: -8px;
-  background-color: white;
-  left: 40px;
 }

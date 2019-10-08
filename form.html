@@ -37,38 +37,38 @@
 
         <main>
             <h2 id="formDelivery-title">Enter your personal information</h2>
-            <form id="formDelivery-content" class="float-label" spellcheck="false">
-                <div class="control">
-                    <input type="text" id="firstname" name="firstname" placeholder="first name" required />
-                    <label for="firstname">first name</label>
+            <form id="formDelivery-content">
+                <div class="form-group">
+                    <input type="text" id="firstname" name="firstname" class="form-control" required />
+                    <label for="firstname" class="form-label">first name</label>
                 </div>
 
-                <div class="control">
-                    <input type="text" id="lastname" name="lastname" placeholder="last name" required />
-                    <label for="lastname"> last name</label>
+                <div class="form-group">
+                    <input type="text" id="lastname" name="lastname" class="form-control" required />
+                    <label for="lastname" class="form-label"> last name</label>
                 </div>
-                <div class="control">
-                    <input type="text" id="address" name="address" placeholder="Address" required />
-                    <label for="address">Address </label>
+                <div class="form-group">
+                    <input type="text" id="address" name="address" class="form-control" required />
+                    <label for="address" class="form-label">Address </label>
                 </div>
-                <div class="control small">
-                    <input type="number" id="zipcode" name="zipcode" placeholder="Zip code." maxlength="4" required />
-                    <label for="zipcode"> Zip code.</label>
+                <div class="form-group small">
+                    <input type="number" id="zipcode" name="zipcode" maxlength="4" class="form-control form-control-zip"
+                        required />
+                    <label for="zipcode" class="form-label form-label-zip"> Zip code.</label>
                 </div>
-                <div class="control medium">
-                    <input type="text" id="town" name="town" placeholder="Town" required />
-                    <label for="town">Town </label>
+                <div class="form-group medium">
+                    <input type="text" id="town" name="town" class="form-control form-control-town" required />
+                    <label for="town" class="form-label form-label-town">Town </label>
                 </div>
-                <div class="control">
-                    <input type="email" id="email" name="email" placeholder="Email"
+                <div class="form-group">
+                    <input type="email" id="email" name="email"
                         pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
-                        required />
-                    <label for="email">Email </label>
+                        class="form-control" required />
+                    <label for="email" class="form-label">Email </label>
                 </div>
-                <div class="control">
-                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" placeholder="Telephone number."
-                        required />
-                    <label for="phone"> Telephone number.</label>
+                <div class="form-group">
+                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" class="form-control" required />
+                    <label for="phone" class="form-label"> Telephone number.</label>
                 </div>
 
 
