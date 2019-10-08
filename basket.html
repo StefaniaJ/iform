@@ -37,7 +37,7 @@
 
         <main>
             <form id="formDelivery-content">
-                
+
                 <h4 class="KurvHeadings">Vælg flere numre og spar mere!</h4>
                 <h4 id="selectheader1"> Dit Valg:</h4>
                 <div id="item1" class="subscriptionselect active2">
@@ -45,7 +45,7 @@
                     <p class="rabat">Spar 761 kr.</p>
                 </div>
                 <h4 id="selectheader2" class="purple">Mest Populære</h4>
-                <div id="item2" class="subscriptionselect" >
+                <div id="item2" class="subscriptionselect">
                     <p> <strong> 6 nr</strong> for 199 kr.</p>
                     <p class="rabat">Spar 866 kr.</p>
                 </div>
@@ -58,44 +58,61 @@
                 <div class="imgwrap">
                     <img src="images/jacket.png" alt="ActiveFit Jacket" id="actfitJ">
                 </div>
-                <div class="size">
+                <!-- <div class="size">
                     <td required>
                 S <input type="radio" name="size" id="sizeS"> 
                 M <input type="radio" name="size" id="sizeM"> 
                 L<input type="radio" name="size" id="sizeL"> 
                 XL<input type="radio" name="size" id="sizeXL">
-            </td>
-            </div>
+            </td> -->
+                <div class="size">
+                    <label for="size">
+                        <input type="radio" name="size" id="size">S </input>
+                        <input type="radio" name="size" id="size">M </input>
+                        <input type="radio" name="size" id="size">L </input>
+                        <input type="radio" name="size" id="size">XL</input>
+                    </label>
+                </div>
+
                 <h4 class="KurvHeadings">Din Kurv</h4>
 
                 <section class="pricing">
                     <tbody>
                         <tr>
                             <div class="oneGroup">
-                            <td>
-                                <p class="left">
-                                Din rabat:</p>
-                            </td>
-                            <td> <p class="right rabat" id="moneychange"> 761 kr.</p></td> <br>
-                        </div>
-                        </tr>
-                        <tr >
-                            <td><p class="left">Introduktionspris:</p></td>
-                            <td><p class="right" id="startPrice">149 kr.</p></td> <br>
+                                <td>
+                                    <p class="left">
+                                        Din rabat:</p>
+                                </td>
+                                <td>
+                                    <p class="right rabat" id="moneychange"> 761 kr.</p>
+                                </td> <br>
+                            </div>
                         </tr>
                         <tr>
-                            <td><p class="left">Porto og eksp:</p></td>
-                            <td><p class="right">49,50 kr</p></td> <br>
+                            <td>
+                                <p class="left">Introduktionspris:</p>
+                            </td>
+                            <td>
+                                <p class="right" id="startPrice">149 kr.</p>
+                            </td> <br>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="left">Porto og eksp:</p>
+                            </td>
+                            <td>
+                                <p class="right">49,50 kr</p>
+                            </td> <br>
                         </tr>
                     </tbody>
                     <p class="total">Totalpris inkl. levering</p>
                     <p class="total" id="totalPrice">198,50 kr</p> <br>
                 </section>
-                
 
-                <button type="submit" name="submit" id="onToThePayment-btn" class="onToThePayment-btn"><a
-                        href="form.html"> Videre til levering <i class="fa fa-arrow-up fa-lg"
-                            aria-hidden="true"></i></button></a>
+
+                <button type="submit" name="submit" class="onToThePayment-btn"><a href="form.html"> Videre til levering
+                        <i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></button></a>
 
                 <button type="submit" name="return" id="return" class="return">Gå tilbage</button>
 

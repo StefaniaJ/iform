@@ -32,7 +32,8 @@ html {
   background-color: white;
   max-width: 570px;
   margin: auto;
-  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3),
+    0 7px 21px 0 rgba(0, 0, 0, 0.18);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -41,7 +42,8 @@ html {
   background-color: white;
   max-width: 570px;
   margin: auto;
-  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3),
+    0 7px 21px 0 rgba(0, 0, 0, 0.18);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -84,7 +86,7 @@ html {
   padding-bottom: 20px;
 }
 
-input {
+.form-group input {
   display: block;
   padding: 1.3rem 1.2rem;
   font-size: 0.9rem;
@@ -95,7 +97,7 @@ input {
   border-radius: 2px;
 }
 
-input[type="number"] {
+.form-group input[type="number"] {
   margin-right: -6px;
 }
 
@@ -134,7 +136,6 @@ input[type="number"] {
   color: #5c1182;
   opacity: 1;
   top: -7px;
-  /* left: 175px; */
   padding-left: 3px;
   padding-right: 3px;
   margin-left: 35px;
@@ -143,13 +144,8 @@ input[type="number"] {
   z-index: 10;
 }
 
-/* .form-control-zip:focus + .form-label,
-.form-control-zip:valid + .form-label {
-  left: 62px;
-} */
 .form-control-town:focus + .form-label,
 .form-control-town:valid + .form-label {
-  /* left: 119px; */
   padding-left: 3px;
   padding-right: 3px;
   margin-left: 26px;
@@ -160,21 +156,12 @@ input[type="number"] {
   z-index: 1;
   top: 19px;
   transition: 0.3s;
-  /* margin-left: -141px; */
   margin: 0;
   left: 0;
   padding-left: 30px;
 }
 
-/* .form-label-zip { */
-/* margin-left: -28px; */
-/* margin: 0;
-  left: 0;
-  padding-left: 30px; */
-/* } */
-
 .form-label-town {
-  /* margin-left: -95px; */
   margin: 0;
   left: 0;
   padding-left: 18px;
@@ -183,7 +170,6 @@ input[type="number"] {
 .onToThePayment-btn {
   background-color: #5c1182;
   display: block;
-  /* width: 50%; */
   width: 67%;
   padding: 1rem 2rem;
   margin: 0 auto;
@@ -367,6 +353,10 @@ p.right {
 #actfitJ {
   width: 20%;
 }
+
+#size + #size {
+  margin-left: 10%;
+}
 /* ////////  Media  ///////*/
 
 @media (min-width: 437px) {
@@ -466,12 +456,12 @@ p.right {
     padding-bottom: 20px;
   }
 
-  input {
+  .form-group input {
     padding: 1.2rem 1.2rem;
     width: 75%;
   }
 
-  input[type="number"] {
+  .form-group input[type="number"] {
     width: 67%;
   }
 
@@ -479,10 +469,6 @@ p.right {
     width: 80%;
   }
 
-  #onToThePayment-btn {
-    width: 56%;
-    padding: 0.9rem 2rem;
-  }
   .form-control:focus + .form-label,
   .form-control:valid + .form-label {
     margin-left: 90px;
@@ -509,7 +495,7 @@ p.right {
 }
 
 @media (min-width: 750px) {
-  #onToThePayment-btn {
+  .onToThePayment-btn {
     width: 47%;
   }
   .sect {
