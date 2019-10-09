@@ -11,12 +11,6 @@
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 body,
 html {
   font-family: Helvetica, Arial;
@@ -250,6 +244,7 @@ html {
   font-weight: 700;
   font-size: 17px;
   padding-left: 4px;
+  cursor: pointer;
 }
 
 .onToThePayment-btn a {
@@ -257,6 +252,7 @@ html {
   font-weight: 700;
   font-size: 17px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .return {
@@ -266,14 +262,18 @@ html {
   font-size: 14px;
   margin-top: 20px;
   border-bottom: 1px #888b8d solid;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
-#form-footer-title {
+.form-footer #form-footer-title {
   font-size: 0.9rem;
   line-height: 1.6;
-  font-weight: 700;
+  font-weight: 500;
   color: #161616;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #form-footer-p {
@@ -290,6 +290,7 @@ html {
   font-weight: 700;
   color: #161616;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .fa-lg {
