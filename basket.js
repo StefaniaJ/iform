@@ -26,7 +26,7 @@ function selected3() {
   item3.classList.add("active2");
 
   header1.textContent = "";
-  header2.textContent = "";
+  header2.textContent = "Mest Populære";
   header3.textContent = "Dit Valg:";
 
   priceR.textContent = "921 kr.";
@@ -60,7 +60,7 @@ function selected1() {
   item3.classList.remove("active2");
 
   header1.textContent = "Dit valg:";
-  header2.textContent = "";
+  header2.textContent = "Mest Populære";
   header3.textContent = "";
 
   priceR.textContent = "761 kr.";

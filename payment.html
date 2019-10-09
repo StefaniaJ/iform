@@ -31,34 +31,43 @@
 
       <main>
         <form id="formDelivery-content">
-          <h4>Vælg betalingsmetode</h4>
+
+          <h4 class="KurvHeadings">Vælg betalingsmetode</h4>
           <div id="allThings">
             <div class="OneRow">
-              <input type="radio" name="cardtype" id="visa" class="radiocard onePiece" /> <label for="visa" class="onePiece">Visa/Dankort</label>
-              <img src="FUCKER" alt="visa dankort image" />
+              <input type="radio" name="cardtype" id="visa" class="radiocard onePiece" required /> <label for="visa" class="onePiece">Visa/Dankort</label>
+              <img src="images/visaimg.PNG" alt="visa dankort image" class="rightimg" />
             </div>
-
             <div class="OneRow">
               <input type="radio" name="cardtype" id="kredit" class="radiocard onePiece" /> <label for="kredit" class="onePiece">Kreditkort</label>
-              <img src="FUCKER" alt="debit card image" />
+              <img src="images/kredimg.PNG" alt="debit card image" class="rightimg" />
+
             </div>
             <div class="OneRow">
               <input type="radio" name="cardtype" id="mobilepay" class="radiocard onePiece" />
               <label for="mobilepay" class="onePiece">MobilePay</label>
-              <img src="FUCKER" alt="mobilepay image" />
+
+              <img src="images/mobiimg.PNG" alt="mobilepay image" class="rightimg" />
             </div>
             <div class="OneRow">
               <input type="radio" name="cardtype" id="giro" class="radiocard onePiece" /> <label for="giro" class="onePiece">Girokort</label>
-              <p>+ 15 kr i afgift</p>
+              <p class="rightimg">+ 15 kr i afgift</p>
             </div>
           </div>
-
-          <input type="checkbox" name="terms&cond" class="checkbox radiocard" id="termscon" />
-          <label for="termscon">Jeg har læst og accepteret <a href="">vilkår for kortbetaling</a> og <a href="">abonnementsbetingelserne</a></label> <br />
-          <input type="checkbox" name="newsl" class="checkbox radiocard" id="newslet" /> <label for="newslet">Ja tak, jeg vil gerne modtage spændende nyhedsbreve <a href="">Læs mere</a></label>
+          <div class="oneCheck">
+            <input type="checkbox" required name="terms&cond" class="checkbox radiocard" id="termscon" />
+            <label for="termscon">Jeg har læst og accepteret <a href="" class="blibblob">vilkår for kortbetaling</a> og <a href="" class="blibblob">abonnementsbetingelserne</a></label> <br />
+          </div>
+          <div class="oneCheck">
+            <input type="checkbox" name="newsl" class="checkbox radiocard" id="newslet" />
+            <label for="newslet">Ja tak, jeg vil gerne modtage spændende <a href="" class="blibblob">nyhedsbreve</a></label>
+          </div>
 
           <div id="BasketSUM">
-            <img src="FUCKER" alt="magazine and jacket" />
+            <h4 class="kurvHeadings" id="finalkurv">Kurv</h4>
+            <img src="images/jacket+mag.PNG" alt="magazine and jacket" id="jacketmag" />
+            <p><strong> 4 nr </strong> for 149 kr.</p>
+
             <h4 id="itemName"></h4>
             <p>+ ActiveFit fiberjakke</p>
             <p>størrelse: L</p>

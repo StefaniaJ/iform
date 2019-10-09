@@ -32,8 +32,7 @@ html {
   background-color: white;
   max-width: 570px;
   margin: auto;
-  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3),
-    0 7px 21px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.18);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -42,8 +41,7 @@ html {
   background-color: white;
   max-width: 570px;
   margin: auto;
-  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3),
-    0 7px 21px 0 rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.18);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -300,13 +298,20 @@ html {
 }
 
 /* Form page 1- Kurv */
-p.left {
-  text-align: left;
+span.left {
+  float: left;
   margin-left: 5em;
 }
-p.right {
-  text-align: right;
+span.right {
+  float: right;
   margin-right: 5em;
+}
+span {
+  padding: 1em;
+}
+
+#thistotal {
+  margin-top: 10em;
 }
 
 .oneGroup {
@@ -361,13 +366,53 @@ p.right {
   margin-left: 10%;
 }
 
-/* .dd {
+.dd {
   width: 50px;
 }
 
-.oneRow {
+.OneRow {
   display: block;
-} */
+  text-align: left;
+  border: 1px solid #e9e8e8;
+  border-style: solid;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.rightimg {
+  float: right;
+}
+
+.oneCheck {
+  display: block;
+  text-align: left;
+  margin-left: 3em;
+  margin-right: 3em;
+  padding: 1em;
+}
+
+#BasketSUM {
+  border: 2px solid var(--purple);
+  margin-left: 5em;
+  padding: 1em;
+  margin-right: 5em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+#finalkurv {
+  color: var(--purple);
+}
+
+a.blibblob {
+  color: #888b8d;
+}
+
+#jacketmag {
+  width: 40%;
+}
 
 
 /* ////////  Media  ///////*/
@@ -777,9 +822,7 @@ p.right {
   background-color: white;
   z-index: 10;
 }
-.control-input:invalid:not(:focus):not(:placeholder-shown)
-  + .control-label
-  + .control-requirements {
+.control-input:invalid:not(:focus):not(:placeholder-shown) + .control-label + .control-requirements {
   max-height: 100px;
   /* padding: 9px;
   border: 1px solid red; */
