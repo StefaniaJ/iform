@@ -83,7 +83,7 @@ html {
   padding-top: 15px;
   padding-bottom: 20px;
 }
-
+/*////////// FORM ///////////// */
 .form-group input {
   display: block;
   padding: 1.3rem 1.2rem;
@@ -94,33 +94,26 @@ html {
   border: 1px solid #e4e3e3;
   border-radius: 2px;
 }
-
-.form-group input[type="number"] {
-  margin-right: -6px;
+.form-group {
+  position: relative;
+  font-size: 15px;
 }
 
 #town {
   margin-left: 7px;
 }
 
-.form-group {
-  position: relative;
-  font-size: 15px;
-}
-
 .form-group.small {
-  width: 33%;
   display: inline-block;
+  width: 34%;
+  margin-left: 11px;
+  margin-right: -13px;
 }
 .form-group.medium {
   width: 65%;
   display: inline-block;
 }
 
-.form-control {
-  transition: 0.3s;
-  color: #161616;
-}
 .form-control:invalid {
   outline: none;
 }
@@ -129,6 +122,7 @@ html {
   outline: none;
 }
 
+/* title-up valid, focus */
 .form-control:focus + .form-label,
 .form-control:valid + .form-label {
   font-size: 12px;
@@ -145,11 +139,15 @@ html {
 
 .form-control-town:focus + .form-label,
 .form-control-town:valid + .form-label {
-  padding-left: 3px;
-  padding-right: 3px;
   margin-left: 26px;
 }
 
+.form-control-zip:focus + .form-label,
+.form-control-zip:valid + .form-label {
+  margin-left: 20px;
+}
+
+/* Text -inside */
 .form-label {
   position: absolute;
   z-index: 1;
@@ -160,11 +158,81 @@ html {
   padding-left: 30px;
 }
 
+.form-label-zip {
+  padding-left: 19px;
+}
+
 .form-label-town {
   margin: 0;
   left: 0;
   padding-left: 18px;
 }
+
+/* ///////////VALITATION START ////////*/
+/* error message */
+.control-requirements {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 200ms ease;
+  position: absolute;
+  top: 61px;
+  padding-left: 18px;
+}
+
+.control-requirements-zip {
+  padding-left: 6px;
+  text-align: left;
+  width: 115px;
+}
+.control-requirements-town {
+  padding-left: 8px;
+}
+
+/* Input invalid -box */
+.form-control:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: red;
+  margin-bottom: 40px;
+}
+
+/* Title-up -invalid */
+.form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label {
+  font-size: 12px;
+  color: #5c1182;
+  opacity: 1;
+  top: -7px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 35px;
+  transition: top 0.4s ease, opacity 0.4s ease;
+  background-color: white;
+  z-index: 10;
+}
+
+.form-control-zip:invalid:not(:focus):not(:placeholder-shown)
+  + .form-label-zip {
+  margin-left: 20px;
+}
+
+.form-control-town:invalid:not(:focus):not(:placeholder-shown)
+  + .form-label-town {
+  margin-left: 26px;
+}
+
+/* Invalid- message */
+.form-control:invalid:not(:focus):not(:placeholder-shown)
+  + .form-label
+  + .control-requirements {
+  max-height: 100px;
+  color: red;
+  font-size: 12px;
+}
+
+/* Valid -input -box */
+.form-control:valid:not(:focus):not(:placeholder-shown) {
+  border-color: #5fa550;
+}
+
+/* ///////////VALITATION END ////////*/
 
 .onToThePayment-btn {
   background-color: #5c1182;
@@ -417,6 +485,15 @@ a.blibblob {
 
 /* ////////  Media  ///////*/
 
+@media (min-width: 400px) {
+  .control-requirements {
+    padding-left: 20px;
+  }
+  .control-requirements-zip {
+    padding-left: 6px;
+  }
+}
+
 @media (min-width: 437px) {
   #index-footer {
     display: grid;
@@ -466,14 +543,29 @@ a.blibblob {
     padding-bottom: 20px;
   }
 }
+
+@media (min-width: 450px) {
+  .control-requirements {
+    padding-left: 23px;
+  }
+  .control-requirements-zip {
+    padding-left: 6px;
+  }
+}
+
 @media (min-width: 500px) {
   .form-control:focus + .form-label,
   .form-control:valid + .form-label {
-    margin-left: 38px;
+    margin-left: 35px;
   }
 
-  .form-control-town:focus + .form-label,
-  .form-control-town:valid + .form-label {
+  .form-control-zip:focus + .form-label-zip,
+  .form-control-zip:valid + .form-label-zip {
+    margin-left: 20px;
+  }
+
+  .form-control-town:focus + .form-label-town,
+  .form-control-town:valid + .form-label-town {
     margin-left: 26px;
   }
 
@@ -491,6 +583,15 @@ a.blibblob {
     width: 200px;
   }
 }
+@media (min-width: 550px) {
+  .control-requirements {
+    padding-left: 27px;
+  }
+  .control-requirements-zip {
+    padding-left: 6px;
+  }
+}
+
 @media (min-width: 600px) {
   .logo {
     width: 215px;
@@ -519,14 +620,11 @@ a.blibblob {
     width: 75%;
   }
 
-  .form-group input[type="number"] {
-    width: 67%;
-  }
-
   #town {
-    width: 80%;
+    margin-left: auto;
   }
 
+  /* Text-up -focus */
   .form-control:focus + .form-label,
   .form-control:valid + .form-label {
     margin-left: 90px;
@@ -534,15 +632,52 @@ a.blibblob {
 
   .form-control-town:focus + .form-label,
   .form-control-town:valid + .form-label {
-    margin-left: 26px;
+    margin-left: 70px;
+  }
+
+  .form-control-zip:focus + .form-label,
+  .form-control-zip:valid + .form-label {
+    margin-left: 45px;
   }
 
   .form-label {
     padding-left: 80px;
   }
+  .form-label-zip {
+    padding-left: 35px;
+  }
 
   .form-label-town {
-    padding-left: 18px;
+    /* padding-left: 60px; */
+    margin-left: -20px;
+  }
+  /* Error text */
+  .control-requirements {
+    padding-left: 71px;
+  }
+  .control-requirements-zip {
+    padding-left: 20px;
+  }
+  .control-requirements-town {
+    padding-left: 50px;
+  }
+
+  /* Title-up -invalid */
+  .form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label {
+    margin-left: 90px;
+  }
+  .form-control-town:invalid:not(:focus):not(:placeholder-shown)
+    + .form-label-town {
+    margin-left: 70px;
+  }
+  .form-control-zip:invalid:not(:focus):not(:placeholder-shown)
+    + .form-label-zip {
+    margin-left: 45px;
+  }
+
+  .form-group.small {
+    margin-left: 21px;
+    margin-right: -70px;
   }
 }
 
@@ -777,6 +912,7 @@ a.blibblob {
     display: flex;
   }
 }
+<<<<<<< HEAD
 
 /* trrrrrrrrrrrrrrrrrrrrrrrrr */
 
@@ -866,3 +1002,5 @@ a.blibblob {
   text-align: right;
   margin-left: -36px;
 } */
+=======
+>>>>>>> formValidation

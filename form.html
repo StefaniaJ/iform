@@ -7,6 +7,7 @@
     <!-- Link to CSS -->
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Title of page-->
     <title> Form page 2- Delivery</title>
 </head>
@@ -38,42 +39,78 @@
         <main>
             <h2 id="formDelivery-title">Enter your personal information</h2>
             <form id="formDelivery-content">
-                <div class="form-group">
-                    <input type="text" id="firstname" name="firstname" class="form-control" required />
-                    <label for="firstname" class="form-label">first name</label>
-                </div>
+
 
                 <div class="form-group">
-                    <input type="text" id="lastname" name="lastname" class="form-control" required />
-                    <label for="lastname" class="form-label"> last name</label>
+                    <input type="text" id="firstname" name="firstname" class="form-control " placeholder=" "
+                        minlength="2" required />
+                    <label for="firstname" class="form-label ">first name</label>
+                    <div class="control-requirements">
+                        Please provide your first name
+                    </div>
                 </div>
+
+
                 <div class="form-group">
-                    <input type="text" id="address" name="address" class="form-control" required />
-                    <label for="address" class="form-label">Address </label>
-                </div>
-                <div class="form-group small">
-                    <input type="number" id="zipcode" name="zipcode" maxlength="4" class="form-control form-control-zip"
+                    <input type="text" id="lastname" name="lastname" class="form-control " placeholder=" " minlength="2"
                         required />
-                    <label for="zipcode" class="form-label form-label-zip"> Zip code.</label>
+                    <label for="lastname" class="form-label"> last name</label>
+                    <div class="control-requirements">
+                        Please provide your last name
+                    </div>
                 </div>
+
+
+
+                <div class="form-group">
+                    <input type="text" id="address" name="address" class="form-control" placeholder=" " minlength="2"
+                        required />
+                    <label for="address" class="form-label">Address </label>
+                    <div class="control-requirements">
+                        Please enter your address (must contain a number)
+                    </div>
+                </div>
+
+
+                <div class="form-group small">
+                    <input type="text" id="zipcode" name="zipcode" class="form-control form-control-zip" placeholder=" "
+                        pattern="[0-9]{3,4}" required />
+                    <label for=" zipcode" class="form-label form-label-zip">
+                        Zip code.</label>
+                    <div class="control-requirements control-requirements-zip">
+                        Please enter your ZIP code
+                    </div>
+                </div>
+
+
                 <div class="form-group medium">
-                    <input type="text" id="town" name="town" class="form-control form-control-town" required />
+                    <input type="text" id="town" name="town" class="form-control form-control-town" placeholder=" "
+                        minlength="2" required />
                     <label for="town" class="form-label form-label-town">Town </label>
+                    <div class="control-requirements control-requirements-town">
+                        Please specify city
+                    </div>
                 </div>
+
                 <div class="form-group">
                     <input type="email" id="email" name="email"
                         pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
-                        class="form-control  control-input control-input-email" placeholder=" " required />
+                        class="form-control" placeholder=" " required />
 
-                    <label for="email" class="form-label control-label control-label-email">Email </label>
+                    <label for="email" class="form-label">Email </label>
 
-                    <div class="control-requirements control-requirements--email">
-                        Must be a valid email
+                    <div class="control-requirements">
+                        Please provide a correct email
                     </div>
                 </div>
+
                 <div class="form-group">
-                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" class="form-control" required />
+                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" class="form-control " placeholder=" "
+                        required />
                     <label for="phone" class="form-label"> Telephone number.</label>
+                    <div class="control-requirements">
+                        Must be a valid phone
+                    </div>
                 </div>
 
 
