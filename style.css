@@ -358,6 +358,15 @@ p.right {
 #size + #size {
   margin-left: 10%;
 }
+
+/* .dd {
+  width: 50px;
+}
+
+.oneRow {
+  display: block;
+} */
+
 /* ////////  Media  ///////*/
 
 @media (min-width: 437px) {
