@@ -17,6 +17,9 @@ function clicked() {
   console.log("clicked");
 }
 
+localStorage.setItem("iform_issues", "4 nr for 149 kr.");
+localStorage.setItem("iform_total", "198.50 kr.");
+
 item3.addEventListener("click", selected3);
 
 function selected3() {
@@ -32,6 +35,9 @@ function selected3() {
   priceR.textContent = "921 kr.";
   priceS.textContent = "299 kr.";
   priceT.textContent = "348.50";
+
+  localStorage.setItem("iform_issues", "8 nr for 299 kr.");
+  localStorage.setItem("iform_total", "348.50 kr.");
 }
 
 item2.addEventListener("click", selected2);
@@ -49,6 +55,9 @@ function selected2() {
   priceR.textContent = "866 kr.";
   priceS.textContent = "199 kr.";
   priceT.textContent = "248.50";
+
+  localStorage.setItem("iform_issues", "6 nr for 199 kr.");
+  localStorage.setItem("iform_total", "248.50 kr.");
 }
 
 item1.addEventListener("click", selected1);
@@ -66,4 +75,17 @@ function selected1() {
   priceR.textContent = "761 kr.";
   priceS.textContent = "149 kr.";
   priceT.textContent = "198.50";
+
+  localStorage.setItem("iform_issues", "4 nr for 149 kr.");
+  localStorage.setItem("iform_total", "198.50 kr.");
+}
+
+const defSize = document.querySelectorAll('input[name="size"]');
+
+defSize.forEach(el => {
+  el.addEventListener("change", setJacketSize);
+});
+
+function setJacketSize() {
+  localStorage.setItem("jacket_size", document.querySelector('input[name="size"]:checked').value);
 }

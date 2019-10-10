@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link to CSS -->
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Title of page-->
-    <title> Form page 2- Delivery</title>
+    <title>Form page 2- Delivery</title>
+    <meta name="robots" content="noindex" />
+    <script src="https://kea-alt-del.dk/iform/login.js"></script>
 </head>
-
 
 <body class="page-color">
     <div class="form-container">
@@ -115,24 +116,75 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                    <input type="text" id="lastname" name="lastname" class="form-control " placeholder=" " minlength="2"
+                        required />
+                    <label for="lastname" class="form-label"> last name</label>
+                    <div class="control-requirements">
+                        Please provide your last name
+                    </div>
+                </div>
 
-                <button type="submit" name="submit" class="onToThePayment-btn">On to the payment
-                    <i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></button>
+                <div class="form-group">
+                    <input type="text" id="address" name="address" class="form-control" placeholder=" " minlength="2"
+                        required />
+                    <label for="address" class="form-label">Address </label>
+                    <div class="control-requirements">
+                        Please enter your address (must contain a number)
+                    </div>
+                </div>
 
-                <button type="submit" name="return" id="return" class="return">Return</button>
+                <div class="form-group small">
+                    <input type="text" id="zipcode" name="zipcode" class="form-control form-control-zip" placeholder=" "
+                        pattern="[0-9]{3,4}" required />
+                    <label for=" zipcode" class="form-label form-label-zip"> Zip code.</label>
+                    <div class="control-requirements control-requirements-zip">
+                        Please enter your ZIP code
+                    </div>
+                </div>
 
+                <div class="form-group medium">
+                    <input type="text" id="town" name="town" class="form-control form-control-town" placeholder=" "
+                        minlength="2" required />
+                    <label for="town" class="form-label form-label-town">Town </label>
+                    <div class="control-requirements control-requirements-town">
+                        Please specify city
+                    </div>
+                </div>
 
-            </form>
-        </main>
+                <div class="form-group">
+                    <input type="email" id="email" name="email"
+                        pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+                        class="form-control" placeholder=" " required />
 
-        <hr>
-        <footer class="form-footer">
-            <h2 id="form-footer-subtitle"> Sikker betaling med</h2>
-            <img class="payment"
-                src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/icon-payment-options-da.png"
-                alt="payment">
-        </footer>
+                    <label for="email" class="form-label">Email </label>
 
+                    <div class="control-requirements">
+                        Please provide a correct email
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" pattern="[0-9]*" id="phone" name="phone" class="form-control " placeholder=" "
+                        required />
+                    <label for="phone" class="form-label"> Telephone number.</label>
+                    <div class="control-requirements">
+                        Must be a valid phone
+                    </div>
+                </div>
+
+                <hr>
+                <footer class="form-footer">
+                    <h2 id="form-footer-subtitle"> Sikker betaling med</h2>
+                    <img class="payment"
+                        src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/icon-payment-options-da.png"
+                        alt="payment">
+                </footer>
+
+                <img class="payment"
+                    src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/icon-payment-options-da.png"
+                    alt="payment" />
+                </footer>
     </div>
     <!--Link to JS-->
     <script src="script.js"></script>
