@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Title of page-->
     <title>Betaling</title>
+    <meta name="robots" content="noindex" />
+    <script src="https://kea-alt-del.dk/iform/login.js"></script>
   </head>
 
   <body class="page-color">
@@ -31,7 +33,6 @@
 
       <main>
         <form id="formDelivery-content">
-
           <h4 class="KurvHeadings">Vælg betalingsmetode</h4>
           <div id="allThings">
             <div class="OneRow">
@@ -41,7 +42,6 @@
             <div class="OneRow">
               <input type="radio" name="cardtype" id="kredit" class="radiocard onePiece" /> <label for="kredit" class="onePiece">Kreditkort</label>
               <img src="images/kredimg.PNG" alt="debit card image" class="rightimg" />
-
             </div>
             <div class="OneRow">
               <input type="radio" name="cardtype" id="mobilepay" class="radiocard onePiece" />
@@ -66,11 +66,11 @@
           <div id="BasketSUM">
             <h4 class="kurvHeadings" id="finalkurv">Kurv</h4>
             <img src="images/jacket+mag.PNG" alt="magazine and jacket" id="jacketmag" />
-            <p><strong> 4 nr </strong> for 149 kr.</p>
+            <p id="iform_issues"><strong> 4 nr </strong> for 149 kr.</p>
 
             <h4 id="itemName"></h4>
             <p>+ ActiveFit fiberjakke</p>
-            <p>størrelse: L</p>
+            <p id="jacketsize">størrelse: L</p>
           </div>
 
           <p class="total">Totalpris inkl. levering</p>
@@ -92,9 +92,8 @@
 
         <img class="payment" src="https://abonnement.iform.dk/content/themes/bonnier-magazine/dist/images/icon-payment-options-da.png" alt="payment" />
       </footer>
-
     </div>
-    <!--Link to JS-->
+    <script src="payment.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
