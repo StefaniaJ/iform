@@ -586,6 +586,9 @@ a.blibblob {
   .control-requirements-zip {
     padding-left: 6px;
   }
+  .control-requirements-town {
+    padding-left: 8px;
+  }
 }
 
 @media (min-width: 437px) {
@@ -649,6 +652,9 @@ a.blibblob {
   .control-requirements-zip {
     padding-left: 6px;
   }
+  .control-requirements-town {
+    padding-left: 8px;
+  }
 }
 
 @media (min-width: 500px) {
@@ -687,7 +693,10 @@ a.blibblob {
     padding-left: 27px;
   }
   .control-requirements-zip {
-    padding-left: 6px;
+    padding-left: 11px;
+  }
+  .control-requirements-town {
+    padding-left: 8px;
   }
 }
 
@@ -755,7 +764,7 @@ a.blibblob {
     padding-left: 71px;
   }
   .control-requirements-zip {
-    padding-left: 20px;
+    padding-left: 25px;
   }
   .control-requirements-town {
     padding-left: 50px;
