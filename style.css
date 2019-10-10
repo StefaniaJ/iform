@@ -420,6 +420,62 @@ a.blibblob {
   width: 40%;
 }
 
+/* Radio */
+.OneRow input[type="radio"] {
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  height: 18px;
+  /*margin-right: 8px;
+  margin-left: 46px;*/
+  position: relative;
+  width: 18px;
+  -webkit-appearance: none;
+  border: 2px solid rgb(155, 154, 154);
+}
+
+.OneRow input[type="radio"]:checked:after {
+  background-color: #1be21b;
+  border-radius: 25px;
+  content: "";
+  display: block;
+  height: 6px;
+  left: 4px;
+  position: relative;
+  top: 4px;
+  width: 6px;
+}
+
+.OneRow input[type="radio"]:checked:after {
+  background-color: #1be21b;
+  transition: all 1s;
+}
+
+/*** custom checkboxes from codepen https://codepen.io/jamesbarnett/pen/yILjk?editors=1100&fbclid=IwAR3h8mvilt3ZX2N8KcpBrvcJhK36t7eP3_N1Jwv1C1d-6F8fiY4GgNiKy0s***/
+
+.oneCheck input[type="checkbox"] {
+  display: none;
+} /* to hide the checkbox itself */
+.oneCheck input[type="checkbox"] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.oneCheck input[type="checkbox"] + label:before {
+  content: "\f096";
+} /* unchecked icon */
+.oneCheck input[type="checkbox"] + label:before {
+  letter-spacing: 10px;
+} /* space between checkbox and label */
+
+.oneCheck input[type="checkbox"]:checked + label:before {
+  content: "\f046";
+} /* checked icon */
+.oneCheck input[type="checkbox"]:checked + label:before {
+  letter-spacing: 5px;
+} /* allow space for check mark */
+
 /* ////////  Media  ///////*/
 
 @media (min-width: 437px) {
