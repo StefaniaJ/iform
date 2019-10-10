@@ -11,12 +11,6 @@
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
 body,
 html {
   font-family: Helvetica, Arial;
@@ -58,6 +52,26 @@ html {
   padding-top: 0.6rem;
 }
 
+.form-container a {
+  text-decoration: none;
+}
+.form-container #info {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #161616;
+  text-decoration: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+.form-container #info img {
+  width: 23px;
+  top: -5px;
+  right: -48px;
+  position: relative;
+}
+
 .steps {
   color: #888b8d;
   font-size: 16px;
@@ -90,6 +104,7 @@ html {
   padding-bottom: 20px;
 }
 
+/*////////// FORM ///////////// */
 .form-group input {
   display: block;
   padding: 1.3rem 1.2rem;
@@ -101,22 +116,20 @@ html {
   border-radius: 2px;
 }
 
-.form-group input[type="number"] {
-  margin-right: -6px;
+.form-group {
+  position: relative;
+  font-size: 15px;
 }
 
 #town {
   margin-left: 7px;
 }
 
-.form-group {
-  position: relative;
-  font-size: 15px;
-}
-
 .form-group.small {
-  width: 33%;
   display: inline-block;
+  width: 34%;
+  margin-left: 11px;
+  margin-right: -13px;
 }
 
 .form-group.medium {
@@ -137,7 +150,7 @@ html {
 .form-control:valid {
   outline: none;
 }
-
+/* title-up valid, focus */
 .form-control:focus + .form-label,
 .form-control:valid + .form-label {
   font-size: 12px;
@@ -154,11 +167,14 @@ html {
 
 .form-control-town:focus + .form-label,
 .form-control-town:valid + .form-label {
-  padding-left: 3px;
-  padding-right: 3px;
   margin-left: 26px;
 }
 
+.form-control-zip:focus + .form-label,
+.form-control-zip:valid + .form-label {
+  margin-left: 20px;
+}
+/* Text -inside */
 .form-label {
   position: absolute;
   z-index: 1;
@@ -175,6 +191,88 @@ html {
   padding-left: 18px;
 }
 
+.form-label-zip {
+  padding-left: 19px;
+}
+
+/* ///////////VALITATION START ////////*/
+/* error message */
+.control-requirements {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 200ms ease;
+  position: absolute;
+  top: 61px;
+  padding-left: 18px;
+}
+
+.control-requirements-zip {
+  padding-left: 6px;
+  text-align: left;
+  width: 115px;
+}
+.control-requirements-town {
+  padding-left: 8px;
+}
+
+/* Input invalid -box */
+.form-control:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: red;
+  margin-bottom: 40px;
+}
+
+/* Title-up -invalid */
+.form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label {
+  font-size: 12px;
+  color: #5c1182;
+  opacity: 1;
+  top: -7px;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-left: 35px;
+  transition: top 0.4s ease, opacity 0.4s ease;
+  background-color: white;
+  z-index: 10;
+}
+
+.form-control-zip:invalid:not(:focus):not(:placeholder-shown) + .form-label-zip {
+  margin-left: 20px;
+}
+
+.form-control-town:invalid:not(:focus):not(:placeholder-shown) + .form-label-town {
+  margin-left: 26px;
+}
+
+/* Invalid- message */
+.form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label + .control-requirements {
+  max-height: 100px;
+  color: red;
+  font-size: 12px;
+}
+
+/* Valid -input -box */
+.form-control:valid:not(:focus):not(:placeholder-shown) {
+  border-color: #97be0c;
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+  background-position-x: 96%;
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-image: url(img/exclamation-mark.png);
+}
+
+input:valid:not(:placeholder-shown):not(:focus) {
+  background-position-x: 96%;
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-image: url(img/verified.png);
+}
+
+/* ///////////VALITATION END ////////*/
+
 .onToThePayment-btn {
   background-color: #5c1182;
   display: block;
@@ -189,6 +287,7 @@ html {
   font-weight: 700;
   font-size: 17px;
   padding-left: 4px;
+  cursor: pointer;
 }
 
 .onToThePayment-btn a {
@@ -196,6 +295,7 @@ html {
   font-weight: 700;
   font-size: 17px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .return {
@@ -205,14 +305,12 @@ html {
   font-size: 14px;
   margin-top: 20px;
   border-bottom: 1px #888b8d solid;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
-#form-footer-title {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  font-weight: 700;
-  color: #161616;
-  margin-top: 50px;
+hr {
+  border-top: 0.1px solid #8080809c;
 }
 
 #form-footer-p {
@@ -229,6 +327,7 @@ html {
   font-weight: 700;
   color: #161616;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 .fa-lg {
@@ -376,7 +475,7 @@ span.right {
   width: 20%;
 }
 
-/* Form page 2- Kurv */
+/* Form page 1- Kurv */
 
 #size + #size {
   margin-left: 10%;
@@ -497,6 +596,17 @@ a.blibblob {
 /* allow space for check mark */
 
 /* ////////  Media  ///////*/
+@media (min-width: 400px) {
+  .control-requirements {
+    padding-left: 20px;
+  }
+  .control-requirements-zip {
+    padding-left: 6px;
+  }
+  .control-requirements-town {
+    padding-left: 8px;
+  }
+}
 
 @media (min-width: 437px) {
   #index-footer {
@@ -548,16 +658,37 @@ a.blibblob {
     text-align: center;
     padding-bottom: 20px;
   }
+
+  .form-container #info img {
+    top: -14px;
+  }
+}
+
+@media (min-width: 450px) {
+  .control-requirements {
+    padding-left: 23px;
+  }
+  .control-requirements-zip {
+    padding-left: 6px;
+  }
+  .control-requirements-town {
+    padding-left: 8px;
+  }
 }
 
 @media (min-width: 500px) {
   .form-control:focus + .form-label,
   .form-control:valid + .form-label {
-    margin-left: 38px;
+    margin-left: 35px;
   }
 
-  .form-control-town:focus + .form-label,
-  .form-control-town:valid + .form-label {
+  .form-control-zip:focus + .form-label-zip,
+  .form-control-zip:valid + .form-label-zip {
+    margin-left: 20px;
+  }
+
+  .form-control-town:focus + .form-label-town,
+  .form-control-town:valid + .form-label-town {
     margin-left: 26px;
   }
 
@@ -573,6 +704,18 @@ a.blibblob {
 @media (min-width: 530px) {
   .sect {
     width: 200px;
+  }
+}
+
+@media (min-width: 550px) {
+  .control-requirements {
+    padding-left: 27px;
+  }
+  .control-requirements-zip {
+    padding-left: 11px;
+  }
+  .control-requirements-town {
+    padding-left: 8px;
   }
 }
 
@@ -604,14 +747,10 @@ a.blibblob {
     width: 75%;
   }
 
-  .form-group input[type="number"] {
-    width: 67%;
-  }
-
   #town {
-    width: 80%;
+    margin-left: auto;
   }
-
+  /* Text-up -focus */
   .form-control:focus + .form-label,
   .form-control:valid + .form-label {
     margin-left: 90px;
@@ -619,15 +758,51 @@ a.blibblob {
 
   .form-control-town:focus + .form-label,
   .form-control-town:valid + .form-label {
-    margin-left: 26px;
+    margin-left: 70px;
+  }
+
+  .form-control-zip:focus + .form-label,
+  .form-control-zip:valid + .form-label {
+    margin-left: 45px;
   }
 
   .form-label {
     padding-left: 80px;
   }
 
+  .form-label-zip {
+    padding-left: 35px;
+  }
+
   .form-label-town {
-    padding-left: 18px;
+    margin-left: -20px;
+  }
+
+  /* Error text */
+  .control-requirements {
+    padding-left: 71px;
+  }
+  .control-requirements-zip {
+    padding-left: 25px;
+  }
+  .control-requirements-town {
+    padding-left: 50px;
+  }
+
+  /* Title-up -invalid */
+  .form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label {
+    margin-left: 90px;
+  }
+  .form-control-town:invalid:not(:focus):not(:placeholder-shown) + .form-label-town {
+    margin-left: 70px;
+  }
+  .form-control-zip:invalid:not(:focus):not(:placeholder-shown) + .form-label-zip {
+    margin-left: 45px;
+  }
+
+  .form-group.small {
+    margin-left: 21px;
+    margin-right: -70px;
   }
 }
 
@@ -1141,102 +1316,9 @@ main {
   }
 }
 
-/* trrrrrrrrrrrrrrrrrrrrrrrrr */
-
-.control-label {
-  /* color: #423e3d;
-  font-weight: bold; */
-  transition: color 300ms ease;
-}
-
-.control-requirements {
-  /* background: pink;
-  border-top: none; */
-  /* margin: -14px 0 15px; */
-  /* margin: -14px 267 15px; */
-  max-height: 0;
-  overflow: hidden;
-  transition: all 200ms ease;
-  /* padding: 0 9px; */
-}
-
-.control-input {
-  /* border-radius: 3px; */
-  box-shadow: 0 1px 3px rgba(197, 193, 192, 0) inset;
-  color: #6d6665;
-  /* margin: 0.8em 0; */
-  border: 1px solid #c5c1c0;
-  /* padding: 0.6em 0.6em; */
-  transition: box-shadow 300ms ease-out;
-}
-
-.control-input:invalid:not(:focus):not(:placeholder-shown) {
-  border-color: red;
-}
-
-.control-input:invalid:not(:focus):not(:placeholder-shown) + .control-label {
-  font-size: 12px;
-  color: #5c1182;
-  opacity: 1;
-  top: -7px;
-  padding-left: 3px;
-  padding-right: 3px;
-  margin-left: 90px;
-  transition: top 0.4s ease, opacity 0.4s ease;
-  background-color: white;
-  z-index: 10;
-}
-
-.control-input:invalid:not(:focus):not(:placeholder-shown) + .control-label + .control-requirements {
-  max-height: 100px;
-  /* padding: 9px;
-  border: 1px solid red; */
-  margin-left: -291px;
-  color: red;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-
-.control-input:valid:not(:focus):not(:placeholder-shown) {
-  border-color: #5fa550;
-}
-
-.control-input:valid:not(:focus):not(:placeholder-shown) + .control-label {
-  color: #5fa550;
-}
-
-.control-requirements-email,
-.control-input-email {
-  order: -1;
-}
-
-.control-label-email {
-  order: -2;
-}
-
-/* .ControlInput--password {
-  order: 0;
-  padding-right: 50px;
-}
-
-.Control-label--password {
-  order: -1;
-  margin-bottom: -32px;
-}
-
-.Control-label--showPassword {
-  width: 32px;
-  position: relative;
-  top: 52px;
-  left: 100%;
-  text-align: right;
-  margin-left: -36px;
-} */
-
 /* Header - Slider - Top page content */
 
-header {
+.header-index {
   max-width: 1350px;
   height: auto;
   margin: 0 auto;
