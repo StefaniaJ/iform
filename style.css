@@ -307,6 +307,11 @@ span.right {
   float: right;
   margin-right: 5em;
 }
+
+span {
+  padding: 1em;
+}
+
 .rating span {
   padding: 1em;
 }
@@ -414,7 +419,6 @@ a.blibblob {
 #jacketmag {
   width: 40%;
 }
-
 
 /* ////////  Media  ///////*/
 
@@ -868,9 +872,9 @@ a.blibblob {
   margin-left: -36px;
 } */
 
- /* Header - Slider - Top page content */
+/* Header - Slider - Top page content */
 
- header {
+header {
   max-width: 1350px;
   height: auto;
   margin: 0 auto;
@@ -989,7 +993,7 @@ a.blibblob {
 }
 
 #campaign-header-mobile {
-  background-color: #E9E8E7;
+  background-color: #e9e8e7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1123,17 +1127,17 @@ a.blibblob {
 }
 
 .offer-item:nth-child(2) {
-  transform: rotate(5deg) translateX(10px) scale(.95);
+  transform: rotate(5deg) translateX(10px) scale(0.95);
   z-index: 110;
 }
 
 .offer-item:nth-child(3) {
-  transform: rotate(-5deg) translateX(-10px) scale(.95);
+  transform: rotate(-5deg) translateX(-10px) scale(0.95);
   z-index: 100;
 }
 
 .offer-item:nth-child(4) {
-  transform: rotate(10deg) translateX(20px) scale(.9);
+  transform: rotate(10deg) translateX(20px) scale(0.9);
   z-index: 90;
 }
 
@@ -1144,160 +1148,160 @@ a.blibblob {
   position: absolute;
 }
 
-.offer-item:nth-child(6) {}
-
+.offer-item:nth-child(6) {
+}
 
 @media only screen and (max-width: 522px) {
   .check-items {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
 @media only screen and (max-width: 749px) {
   #campaign-content ul {
-      width: 90%;
-      padding-left: 2em;
-      padding-top: 2em;
+    width: 90%;
+    padding-left: 2em;
+    padding-top: 2em;
   }
 
   #bottom-container {
-      display: table;
-      margin: 3em auto 0;
+    display: table;
+    margin: 3em auto 0;
   }
 
   #offer {
-      margin-left: 0.8em;
+    margin-left: 0.8em;
   }
 
   #offer i {
-      left: 3.5em;
-      top: 1.5em;
+    left: 3.5em;
+    top: 1.5em;
   }
 
   .offer-item:nth-child(6) {
-      left: 8em;
-      top: 1.2em;
+    left: 8em;
+    top: 1.2em;
   }
 
   #campaign-cta {
-      padding-top: 9em;
+    padding-top: 9em;
   }
 
   #campaign-cta h1 {
-      position: absolute;
-      bottom: 2.2em;
+    position: absolute;
+    bottom: 2.2em;
   }
 
   #campaign-cta h2 {
-      margin-left: 8.3em;
+    margin-left: 8.3em;
   }
 
   #campaign-cta p {
-      margin-left: 1.8em;
+    margin-left: 1.8em;
   }
 }
 
 @media only screen and (max-width: 850px) {
   #campaign-container {
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-top: 19px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 19px;
   }
 
   #campaign-slider {
-      width: 100%;
+    width: 100%;
   }
 
   #campaign-content {
-      width: 100%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .dropdown {
-      display: none;
+    display: none;
   }
 }
 
 @media screen and (min-width: 749px) and (max-width: 1189px) {
   #campaign-content {
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
   }
 
   #top-container {
-      width: 40%;
+    width: 40%;
   }
 
   #bottom-container {
-      margin-top: 1em;
+    margin-top: 1em;
   }
 
   #campaign-content ul {
-      width: 100%;
-      padding: 0;
+    width: 100%;
+    padding: 0;
   }
 
   #offer {
-      margin-left: 0.8em;
+    margin-left: 0.8em;
   }
 
   #offer i {
-      left: 3.5em;
-      top: 1.5em;
+    left: 3.5em;
+    top: 1.5em;
   }
 
   .offer-item:nth-child(6) {
-      left: 8em;
-      top: 1.2em;
+    left: 8em;
+    top: 1.2em;
   }
 
   #campaign-cta {
-      padding-top: 9em;
+    padding-top: 9em;
   }
 
   #campaign-cta h1 {
-      position: absolute;
-      bottom: 2.2em;
+    position: absolute;
+    bottom: 2.2em;
   }
 
   #campaign-cta h2 {
-      margin-left: 8.3em;
+    margin-left: 8.3em;
   }
 
   #campaign-cta p {
-      margin-left: 1.8em;
+    margin-left: 1.8em;
   }
 }
 
 @media screen and (min-width: 993px) and (max-width: 1189px) {
   .dropbtn {
-      padding-bottom: 15.5px;
+    padding-bottom: 15.5px;
   }
 }
 
 @media screen and (min-width: 851px) and (max-width: 1189px) {
   #campaign-container {
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-top: 19px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 19px;
   }
 
   #campaign-slider {
-      margin: 0 auto;
-      width: 700px;
+    margin: 0 auto;
+    width: 700px;
   }
 
   #campaign-content {
-      margin: 2em auto 0 auto;
-      width: 700px;
+    margin: 2em auto 0 auto;
+    width: 700px;
   }
 }
 
 @media only screen and (max-width: 1189px) {
   #campaign-content-header {
-      display: none;
+    display: none;
   }
 
   #campaign-content {
@@ -1307,107 +1311,106 @@ a.blibblob {
 
 @media only screen and (min-width: 1189px) {
   #campaign-header-mobile {
-      display: none;
+    display: none;
   }
 
   #campaign-container {
-      position: relative;
-      display: flex;
-      flex-wrap: nowrap;
-      max-width: 1350px;
-      margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1350px;
+    margin: 0 auto;
   }
 
   #campaign-slider {
-      width: 50%;
-      overflow: hidden;
+    width: 50%;
+    overflow: hidden;
   }
 
   #bottom-container {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 2em;
   }
 
   #campaign-content {
-      width: 50%;
-      height: auto;
-      background-color: #f4f4f4;
-      padding: 50px 50px 200px;
+    width: 50%;
+    height: auto;
+    background-color: #f4f4f4;
+    padding: 50px 50px 200px;
   }
 
   #campaign-content-header {
-      margin: 0;
+    margin: 0;
   }
 
   #campaign-content ul {
-      padding-left: 0em;
-      padding-top: 1em;
+    padding-left: 0em;
+    padding-top: 1em;
   }
 
   #rating {
-      margin-left: 1.2em;
+    margin-left: 1.2em;
   }
 
-  #rating span {}
+  #rating span {
+  }
 
   #rating a {
-      position: absolute;
-      left: 8em;
-      top: 0.5em;
+    position: absolute;
+    left: 8em;
+    top: 0.5em;
   }
 
   #rating p {
-      font-size: 13px;
-      margin: 0 0 0 2.3em;
+    font-size: 13px;
+    margin: 0 0 0 2.3em;
   }
 
   #campaign-cta h1 {
-      position: absolute;
-      bottom: 1.8em;
+    position: absolute;
+    bottom: 1.8em;
   }
 
   #campaign-cta h2 {
-      margin-left: 7.8em;
-      margin-bottom: 0.5em;
+    margin-left: 7.8em;
+    margin-bottom: 0.5em;
   }
 
   #campaign-cta {
-      margin-top: 2.4em;
+    margin-top: 2.4em;
   }
 
   #campaign-cta p {
-      position: absolute;
-      right: 0;
-      margin-top: 0.5em;
+    position: absolute;
+    right: 0;
+    margin-top: 0.5em;
   }
 
   #offer {
-      top: 1em;
+    top: 1em;
   }
 
   #offer i {
-      left: 3.5em;
-      top: 1.5em;
+    left: 3.5em;
+    top: 1.5em;
   }
 
   .offer-item:nth-child(6) {
-      left: 8em;
-      top: 1.2em;
+    left: 8em;
+    top: 1.2em;
   }
 
   #rating-mobile {
-      display: none;
+    display: none;
   }
 
   #mobile-rating-p {
-      display: none;
+    display: none;
   }
 
   #rating {
-      display: block;
+    display: block;
   }
 }
-
-
