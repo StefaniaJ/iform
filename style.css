@@ -255,7 +255,7 @@ html {
   border-color: #97be0c;
 }
 
-input:invalid:not(:placeholder-shown):not(:focus) {
+.form-group input:invalid:not(:placeholder-shown):not(:focus) {
   background-position-x: 96%;
   background-position-y: 50%;
   background-size: 20px 20px;
@@ -263,7 +263,7 @@ input:invalid:not(:placeholder-shown):not(:focus) {
   background-image: url(img/exclamation-mark.png);
 }
 
-input:valid:not(:placeholder-shown):not(:focus) {
+.form-group input:valid:not(:placeholder-shown):not(:focus) {
   background-position-x: 96%;
   background-position-y: 50%;
   background-size: 20px 20px;
