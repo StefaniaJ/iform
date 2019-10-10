@@ -247,10 +247,24 @@ html {
 
 /* Valid -input -box */
 .form-control:valid:not(:focus):not(:placeholder-shown) {
-  border-color: #5fa550;
+  border-color: #97be0c;
 }
 
-/* input:invalid */
+input:invalid:not(:placeholder-shown):not(:focus) {
+  background-position-x: 96%;
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-image: url(img/exclamation-mark.png);
+}
+
+input:valid:not(:placeholder-shown):not(:focus) {
+  background-position-x: 96%;
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-image: url(img/verified.png);
+}
 
 /* ///////////VALITATION END ////////*/
 
