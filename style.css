@@ -1346,7 +1346,7 @@ main {
   display: block;
   margin: 0 auto;
   height: 56px;
-  padding: 0.5rem;
+  padding: 0 1rem 0.5rem 1rem;
 }
 
 .dropbtn {
@@ -1525,6 +1525,7 @@ main {
 
 #campaign-content h1 {
   font-weight: 400;
+  font-size: 1.8rem;
 }
 
 #rating {
@@ -1652,9 +1653,9 @@ main {
   border: none;
   background: none;
   position: absolute;
-  font-size: 2.5em;
-  left: 0.5em;
-  top: 0.6em;
+  font-size: 1.8em;
+  left: 0.3em;
+  top: 0.7em;
   cursor: pointer;
   width: auto;
   height: auto;
@@ -1707,10 +1708,6 @@ main {
   #bottom-container-mobile {
     display: table;
     margin: 3em auto 0;
-  }
-
-  #campaign-cta {
-    padding-top: 1.5em;
   }
 
   #offer {
