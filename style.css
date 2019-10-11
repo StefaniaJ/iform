@@ -57,6 +57,7 @@ html {
 .form-container a {
   text-decoration: none;
 }
+
 .form-container #info {
   font-size: 0.9rem;
   line-height: 1.6;
@@ -90,7 +91,7 @@ html {
   font-size: 0.85rem;
 }
 
-.stp + .stp {
+.stp+.stp {
   margin-left: 13%;
 }
 
@@ -152,9 +153,10 @@ html {
 .form-control:valid {
   outline: none;
 }
+
 /* title-up valid, focus */
-.form-control:focus + .form-label,
-.form-control:valid + .form-label {
+.form-control:focus+.form-label,
+.form-control:valid+.form-label {
   font-size: 12px;
   color: #5c1182;
   opacity: 1;
@@ -167,15 +169,16 @@ html {
   z-index: 10;
 }
 
-.form-control-town:focus + .form-label,
-.form-control-town:valid + .form-label {
+.form-control-town:focus+.form-label,
+.form-control-town:valid+.form-label {
   margin-left: 26px;
 }
 
-.form-control-zip:focus + .form-label,
-.form-control-zip:valid + .form-label {
+.form-control-zip:focus+.form-label,
+.form-control-zip:valid+.form-label {
   margin-left: 20px;
 }
+
 /* Text -inside */
 .form-label {
   position: absolute;
@@ -213,6 +216,7 @@ html {
   text-align: left;
   width: 115px;
 }
+
 .control-requirements-town {
   padding-left: 8px;
 }
@@ -224,7 +228,7 @@ html {
 }
 
 /* Title-up -invalid */
-.form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label {
+.form-control:invalid:not(:focus):not(:placeholder-shown)+.form-label {
   font-size: 12px;
   color: #5c1182;
   opacity: 1;
@@ -237,20 +241,16 @@ html {
   z-index: 10;
 }
 
-.form-control-zip:invalid:not(:focus):not(:placeholder-shown)
-  + .form-label-zip {
+.form-control-zip:invalid:not(:focus):not(:placeholder-shown)+.form-label-zip {
   margin-left: 20px;
 }
 
-.form-control-town:invalid:not(:focus):not(:placeholder-shown)
-  + .form-label-town {
+.form-control-town:invalid:not(:focus):not(:placeholder-shown)+.form-label-town {
   margin-left: 26px;
 }
 
 /* Invalid- message */
-.form-control:invalid:not(:focus):not(:placeholder-shown)
-  + .form-label
-  + .control-requirements {
+.form-control:invalid:not(:focus):not(:placeholder-shown)+.form-label+.control-requirements {
   max-height: 100px;
   color: red;
   font-size: 12px;
@@ -483,7 +483,7 @@ span.right {
 
 /* Form page 1- Kurv */
 
-#size + #size {
+#size+#size {
   margin-left: 10%;
 }
 
@@ -574,28 +574,28 @@ a.blibblob {
 }
 
 /* to hide the checkbox itself */
-.oneCheck input[type="checkbox"] + label:before {
+.oneCheck input[type="checkbox"]+label:before {
   font-family: FontAwesome;
   display: inline-block;
 }
 
-.oneCheck input[type="checkbox"] + label:before {
+.oneCheck input[type="checkbox"]+label:before {
   content: "\f096";
 }
 
 /* unchecked icon */
-.oneCheck input[type="checkbox"] + label:before {
+.oneCheck input[type="checkbox"]+label:before {
   letter-spacing: 10px;
 }
 
 /* space between checkbox and label */
 
-.oneCheck input[type="checkbox"]:checked + label:before {
+.oneCheck input[type="checkbox"]:checked+label:before {
   content: "\f046";
 }
 
 /* checked icon */
-.oneCheck input[type="checkbox"]:checked + label:before {
+.oneCheck input[type="checkbox"]:checked+label:before {
   letter-spacing: 5px;
 }
 
@@ -606,9 +606,11 @@ a.blibblob {
   .control-requirements {
     padding-left: 20px;
   }
+
   .control-requirements-zip {
     padding-left: 6px;
   }
+
   .control-requirements-town {
     padding-left: 8px;
   }
@@ -656,7 +658,7 @@ a.blibblob {
     font-size: 0.85rem;
   }
 
-  .stp + .stp {
+  .stp+.stp {
     margin-left: 20%;
   }
 
@@ -674,27 +676,30 @@ a.blibblob {
   .control-requirements {
     padding-left: 23px;
   }
+
   .control-requirements-zip {
     padding-left: 6px;
   }
+
   .control-requirements-town {
     padding-left: 8px;
   }
 }
 
 @media (min-width: 500px) {
-  .form-control:focus + .form-label,
-  .form-control:valid + .form-label {
+
+  .form-control:focus+.form-label,
+  .form-control:valid+.form-label {
     margin-left: 35px;
   }
 
-  .form-control-zip:focus + .form-label-zip,
-  .form-control-zip:valid + .form-label-zip {
+  .form-control-zip:focus+.form-label-zip,
+  .form-control-zip:valid+.form-label-zip {
     margin-left: 20px;
   }
 
-  .form-control-town:focus + .form-label-town,
-  .form-control-town:valid + .form-label-town {
+  .form-control-town:focus+.form-label-town,
+  .form-control-town:valid+.form-label-town {
     margin-left: 26px;
   }
 
@@ -717,9 +722,11 @@ a.blibblob {
   .control-requirements {
     padding-left: 27px;
   }
+
   .control-requirements-zip {
     padding-left: 11px;
   }
+
   .control-requirements-town {
     padding-left: 8px;
   }
@@ -739,7 +746,7 @@ a.blibblob {
     font-size: 0.85rem;
   }
 
-  .stp + .stp {
+  .stp+.stp {
     margin-left: 20%;
   }
 
@@ -756,19 +763,20 @@ a.blibblob {
   #town {
     margin-left: auto;
   }
+
   /* Text-up -focus */
-  .form-control:focus + .form-label,
-  .form-control:valid + .form-label {
+  .form-control:focus+.form-label,
+  .form-control:valid+.form-label {
     margin-left: 90px;
   }
 
-  .form-control-town:focus + .form-label,
-  .form-control-town:valid + .form-label {
+  .form-control-town:focus+.form-label,
+  .form-control-town:valid+.form-label {
     margin-left: 70px;
   }
 
-  .form-control-zip:focus + .form-label,
-  .form-control-zip:valid + .form-label {
+  .form-control-zip:focus+.form-label,
+  .form-control-zip:valid+.form-label {
     margin-left: 45px;
   }
 
@@ -788,23 +796,25 @@ a.blibblob {
   .control-requirements {
     padding-left: 71px;
   }
+
   .control-requirements-zip {
     padding-left: 25px;
   }
+
   .control-requirements-town {
     padding-left: 50px;
   }
 
   /* Title-up -invalid */
-  .form-control:invalid:not(:focus):not(:placeholder-shown) + .form-label {
+  .form-control:invalid:not(:focus):not(:placeholder-shown)+.form-label {
     margin-left: 90px;
   }
-  .form-control-town:invalid:not(:focus):not(:placeholder-shown)
-    + .form-label-town {
+
+  .form-control-town:invalid:not(:focus):not(:placeholder-shown)+.form-label-town {
     margin-left: 70px;
   }
-  .form-control-zip:invalid:not(:focus):not(:placeholder-shown)
-    + .form-label-zip {
+
+  .form-control-zip:invalid:not(:focus):not(:placeholder-shown)+.form-label-zip {
     margin-left: 45px;
   }
 
@@ -1188,6 +1198,7 @@ main {
   .sticky-product {
     height: 143px;
   }
+
   .sticky-product .product-add {
     width: 50%;
     padding-top: 29px;
@@ -1499,10 +1510,12 @@ main {
   font-weight: 400;
   padding-top: 0.5em;
   margin-bottom: -5px;
+  font-size: 18px;
 }
 
 #campaign-header-mobile h1 strong {
   font-weight: 700;
+  font-size: 25px;
 }
 
 #campaign-content {
@@ -1977,4 +1990,10 @@ main {
   #bottom-container {
     display: none;
   }
+}
+
+
+.angelspan {
+  padding: 1em;
+  ;
 }
